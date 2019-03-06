@@ -16,7 +16,8 @@ state = {
   contactName: "",
   contactfirstName: "",
   contactlastName: "",
-  contactemail: ""
+  contactemail: "",
+  contactbirthDate: "", //mark added bday
 }
 // if any input field changes it updates the state
 handleInputChange = event => {
@@ -57,7 +58,7 @@ addContact =() =>{
         key = {i}  
         lastName={contact.lastName}
         firstName={contact.firstName}
-        birthDate={contact.birthDate}
+        birthDate={contact.birthDate} //mark added bday
         email={contact.email}
         />    
             
@@ -92,7 +93,8 @@ addContact =() =>{
     firstName: this.state.contactfirstName,
     lastName: this.state.contactlastName,
     email: this.state.contactemail,
-    image: this.state.contactimage
+    image: this.state.contactimage,
+    birthDate: this.state.contactbirthDate //mark added bday
   }
   console.log("On New Contact:", newContactInfo)
   axios.post('/api/contacts', newContactInfo)
