@@ -33,6 +33,9 @@ __3. Cue Notifications__
 - Get in-app notifications based on tagged events
 - Set interval of notifications  
 
+ ## Demonstration of Functionality    
+![SocialQs Personal Relationship Manager](./client/public/assets/images/SocialQs.gif)  
+
 ## Built With
  __M__ ongo  
  __E__ xpress  
